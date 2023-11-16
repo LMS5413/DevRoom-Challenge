@@ -1,0 +1,19 @@
+{
+  "name": "devroom-challenge",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "mysql2": "^3.6.3",
+    "sequelize": "^6.35.0"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
+  }
+}
