@@ -5,7 +5,7 @@ export function createAlternativesRow(correctAnswer: string, incorrectAnswer: st
     const rows: ActionRowBuilder<ButtonBuilder>[] = [];
     for (const alternative of alternatives) {
         if (!rows[rows.length - 1] || rows[rows.length - 1].components.length === 5) rows.push(new ActionRowBuilder());
-        rows[rows.length - 1].addComponents(new ButtonBuilder().setCustomId(alternative).setLabel(alternative).setStyle(ButtonStyle.Primary));
+        rows[rows.length - 1].addComponents(new ButtonBuilder().setCustomId(`${alternative}`).setLabel(`${alternative}`).setStyle(ButtonStyle.Primary));
     }
     return rows;
 }
