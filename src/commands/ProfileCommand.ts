@@ -48,4 +48,4 @@ export default {
             );
         await interaction.reply({embeds: [embed]});
     }
-}
+} as ICommands;
