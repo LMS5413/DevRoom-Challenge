@@ -1,6 +1,7 @@
 import {ChatInputCommandInteraction, Colors, EmbedBuilder} from "discord.js";
 import {SuperClient} from "../SuperClient.ts";
 import ProfileDatabase from "../databases/ProfileDatabase.ts";
+import {ICommands} from "../interfaces/ICommands.ts";
 
 export default {
     name: "leaderboard",
@@ -17,4 +18,4 @@ export default {
             );
         await interaction.reply({embeds: [embed]});
     }
-} as ICommands;
+} as ICommands

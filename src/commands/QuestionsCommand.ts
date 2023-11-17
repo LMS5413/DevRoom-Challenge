@@ -164,4 +164,4 @@ export default {
             }
         }
     }
-} as ICommands;
+} as ICommands
